@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>FSAE - Portfolio by TJ</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by TJ Espino</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="updresume.pdf">Resume</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/banner_fsae_edit.jfif" alt="" />
+							</span>
+							<header class="major">
+								<h1>Formula SAE</h1>
+							</header>
+							<div class="content">
+								<p>Mechanical Design, Fabrication, and Testing<br />
+								Marietta, GA<br />
+								April 2019 - May 2020</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Project Desc -->
+							<section id="project desc">
+								<div class="inner">
+									
+										<div class="box">
+											<p>Formula SAE is a competition where engineering students collaborate in teams to design, test, and build a formula-style racecar. 
+												While on KSU's FSAE team, my efforts were focused on the suspension subteam as a mechanical design engineer. 
+												I slowly gained a better understanding of forces seen on the car to design and manufacture new control arms.
+												Overall redesign goals included reducing subsystem weight, choosing a reasonable material, and improving tolerances and compliance, 
+												all while meeting FSAE safety standards.
+											</p>
+										</div>
+								</div>
+							</section>
+
+						<!-- Project Detail -->
+							<section id="project detail" class="spotlights">
+								<section>
+									<a class="image fit">
+										<img src="images/CAs.jfif" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skills Used</h3>
+											</header>
+											<p>
+												<ul class="alt">
+													<li>SOLIDWORKS : solid modeling, structural FEA for initial analysis, and fabrication drawings</li>
+													<li>MATLAB : for repeating calculations with changing geometry and material parameters</li>
+													<li>ANSYS : used later for composites analysis</li>
+													<li>Machine Shop Tools : use of horizontal bandsaw, manual mill, CNC lathe, and TIG welding</li>
+												</ul>
+												<br />
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/CA_jig_cropped.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Process</h3>
+											</header>
+											<p>
+												With not much knowledge about control arms or even cars in general, 
+												I started hitting the books and asking last year's members how and why they decided to build their current design. 
+												Allegedly, it was just slapped together and it happened to work. 
+												An alumni that worked on them previously had some design reasoning, but no paper trail was left behind. 
+												Working with an experienced member, we started from scratch and thought of an approach for designing new ones.
+											</p>
+											<p>
+												First we asked what are the biggest forces seen on them when the car is driving straight? 
+												Accelerating? Braking? Cornering? Hitting a 2G bump? How much bending will they experience? 
+												How many cycles of compression can they handle? What factor of safety do we use? 
+												While working out the calculations on paper, I got updates from our brake's guy and vehicle dynamics lead on part and loading changes. 
+												Recalculations were happening so often, I wrote a MATLAB code to save on time and hand cramps. 
+												The numbers made sense, but they needed more validation.
+											</p>
+											<p>
+												A finite element analysis study was setup in SOLIDWORKS using a material and tube thickness which matched the maximum stresses from hand calculations. 
+												So the simulation works, but how does this compare to real life loading?
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<!--stagger-->
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/CA_assy.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<p>
+												I put together weldment drawings and machined a jig to notch and align the tubes at an angle for welding. 
+												A custom clamp was also made to mount the specimen control arm in a static MTS machine for compressive and cyclical loads. 
+												The stresses recorded during testing were similar to what was calculated. 
+												Some discrepancies could be caused by the grade of chromoloy steel used and quality of the weld, 
+												but the test still proved that in its current state, we have a working material and tube size.
+											</p>
+											<p>
+												Custom spherical housings were machined (avoiding threaded rod ends that shear under bending loads) 
+												using a lathe and ball joints were press-fit and tacked into place after welding together our finalized tube members. 
+												With the control arms finished, they were installed onto the car.
+											</p>
+											<p>
+												They fit. Mostly.
+											</p>
+											<p>
+												Except when the steering was maxed out and the wheel well started to hit them.
+											</p>
+											<p>
+												Oops.
+											</p>
+											<p>
+												So we readjusted the angles and ran through loading validation which was faster the second time around, 
+												and then built a new set.
+											</p>
+											<p>
+												A successful fit.
+												
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/CA_matlab_calcs_cropped.png" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Challenges and Takeaways</h3>
+											</header>
+											<p>
+												This project was one of the first I thoroughly designed and built from concept to completion, 
+												and the biggest challenge was the learning curve -
+												studying up on vehicle dynamics, diving into machine operation and safety, and understanding 
+												the importance of master CAD organization.
+											</p>
+											<p>
+												By documenting the process, the team has a better foundation to use or reference back to for future builds. 
+												I was happy to hear from younger members that they still use the code as a start for sizing their control arms. 
+												With some food for thought on making the tube member calculator easier to use, 
+												a prompt could ask or import the endpoint coordinates and give a library of saved materials to choose from.
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Next Project -->
+							<section id="next project">
+								<div class="inner">
+									<!-- <header class="major">
+										<h2>	</h2>
+									</header> -->
+									<ul class="actions">
+										<li><a href="weather.html" class="button next">Next Project: Extreme Cold Weather Testing</a></li>
+									</ul>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Last updated March 2025</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

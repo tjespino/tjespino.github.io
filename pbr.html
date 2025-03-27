@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+	thank you HTML5 UP :)
+-->
+<html>
+	<head>
+		<title>PBR Study - Portfolio by TJ</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by TJ Espino</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="updresume.pdf">Resume</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/mobaxterm.png" alt="" />
+							</span>
+							<header class="major">
+								<h1>Pebble Bed Reactors</h1>
+							</header>
+							<div class="content">
+								<p>Research and CFD Simulation<br />
+								Marietta, GA<br />
+								January 2019 - May 2021</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Project Desc -->
+							<section id="project desc">
+								<div class="inner">
+										<div class="box">
+											<p>
+												A pebble bed reactor is a very high temperature, gas-cooled reactor still in its experimental phase in the US. 
+												The fuel pebbles contain Uranium or Thorium embedded within graphite. 
+												The fuel enters through the top of the reactor and over long periods of time migrates towards the bottom, 
+												exhausting its energy, and is added to a spent fuel container. 
+												The heat generated from this process is converted to mechanical and then electrical energy to power cities.
+												Working with a project partner, a study of the heat transfer rate between the pebbles in a pebble bed reactor and gas coolant was carried out using OpenFOAM. 
+												OpenFOAM is a CFD tool similar to ANSYS but uses bash coding to perform tasks.
+											</p>
+										</div>
+								</div>
+							</section>
+
+						<!-- Project Detail -->
+							<section id="project detail" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skills Used</h3>
+											</header>
+											<p>
+												<ul class="alt">
+													<li>OpenFOAM: for detailed simulation and analysis</li>
+													<li>Internal research: digging through old literature to check results</li>
+												</ul>
+												<br />
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/pbr packing.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Process</h3>
+											</header>
+											<p>
+												For this simulation setup, different configurations for the pebble size, packing, and coolant flow were applied for each case. 
+												The pebbles sizes used had diameters of 6cm (typical size) and 3cm, and 
+												packing arrangements consisted of simple cubic, body-centered, and hexagonal closest. 
+												These have packing factors of 0.52, 0.68, and 0.74, respectively. 
+												The packing factor indicates the packing efficiency of a cell volume, where 0.52 means that the pebbles occupy 52% of the cell volume. 
+												How would these factors affect the thermal output of the system?
+											</p>
+											<p>
+												A constant domain size, inlet velocity, and pebble surface temperature was applied to the 12 case studies. 
+												The most challenging part of this simulation was meshing the geometry successfully - bad meshes give incoherent results. 
+												We utilized the snappyhexmesh feature which takes a block mesh and "snaps" it to a more refined one, 
+												but this requires a very well defined mesh setting dictionary. 
+												Any incorrect or unnecessary input in the lengthy dictionary leads to bad or failed meshes.
+											</p>
+											<p>
+												After playing with the mesh and solver settings for each case and redoing cases showing result discrepancies and voiding, 
+												we get axial slices of promising results.
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/h6_slice.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Challenges and Takeaways</h3>
+											</header>
+											<p>
+												The difficult part of this project was learning how to use an open source CFD tool. 
+												The software was new to me and had many resources and settings available, 
+												so it was easy to get lost in text and confused on what to use in the study.
+											</p>
+											<p>
+												Completing a variable matrix study taught what makes a simulation setup decent 
+												(as my mentor would say, “trash in, trash out”), and workarounds for shortening the runtime. 
+												It became easier to recognize artifacts in the results, and we could always check the literature values for reference.
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Next Project -->
+							<section id="next project">
+								<div class="inner">
+									<ul class="actions">
+										<!--<li><a href="magnets.html" class="button next">Next Project: Magnetic Landing Gear</a></li>-->
+										<li><a href="derigging.html" class="button next">Next Project: Auto-Derigging</a></li>
+									</ul>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Last updated March 2025</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

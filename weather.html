@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+	thank you HTML5 UP :)
+-->
+<html>
+	<head>
+		<title>Cold Weather Testing - Portfolio by TJ</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>by TJ Espino</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="updresume.pdf">Resume</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/home_weather.png" alt="" />
+							</span>
+							<header class="major">
+								<h1>Extreme Cold Weather Testing</h1>
+							</header>
+							<div class="content">
+								<p>Data Acquisition<br />
+								Marietta, GA<br />
+								August 2020</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Project Desc -->
+							<section id="project desc">
+								<div class="inner">
+									<blockquote>Note: Due to the proprietary nature of this project, I cannot share photos of my work</blockquote>
+										<div class="box">
+											<p>
+												With an aircraft traveling at altitudes of 12,000 ft and a duration of up to 8 hours,
+												mechanical components in a projectile mounted externally start to fail before they are even launched.
+												During this study, I evaluated and tested the performance of several servo motors 
+												at these conditions to find a working solution.
+											</p>
+										</div>
+								</div>
+							</section>
+
+						<!-- Project Detail -->
+							<section id="project detail" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skills Used</h3>
+											</header>
+											<p>
+												<ul class="alt">
+													<li>Data Acquisition : use of Arduino, sensors, and Windaq for realtime measurements</li>
+													<li>MATLAB : for pulling in data structures and plotting (later converted this into Python)</li>
+													<li>Shop Tools : more practice with a soldering iron, 3D printing</li>
+												</ul>
+												<br />
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>The Process</h3>
+											</header>
+											<p>
+												During the development of a system, concerns were raised on its performance in extreme cold weather conditions. 
+												Our team wanted to test the limits of its deployment subassemblies. 
+												To approach this problem, servos were tested at extreme cold weather conditions both loaded and unloaded.
+											</p>
+											<p>
+												To start, I was given different types of servos ripped out of salvaged drones. 
+											</p>
+											<p>
+												I put together a testing rig to measure the performance of each servo motor: 
+											</p>
+											<ul>
+												<li>non-contact infrared thermal sensor to measure surface temperatures of the motor</li>
+												<li>thermistor for ambient temperature</li>
+												<li>hall effect potentiometer to record servo arm cycle speed</li>
+												<li>an arduino as a controller</li>
+												<li>and a data box coupled with its recording software</li>
+											</ul>
+											<p>
+												Many different conditions were applied to the test such as 
+												starting the motor with a cold soak condition or shock temperature condition, 
+												applying constant flight loads, 
+												and stopping and starting the motor at different time intervals.
+											</p>
+											<p>
+												To post-process this data, the software exported the data to an excel file. 
+												MATLAB was used to import the data into organized elements, convert readings, 
+												filter out outliers, place a moving average to smooth out noise, and plot the final curves. 
+												While this could also be done in excel, it had filter and graphing limitations that would create very large, slow files.
+											</p>
+											<p>
+												Overall, the results showed a strong correlation between lower temperatures and degraded performance. 
+												These were observable physically within the motor and with graphs at startup - 
+												high current indicating motor stress and stalling or a slow rise in current from the initial poor motor performance. 
+												However, performance stayed consistent as long as the motor started and stayed warm by movement.
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Challenges and Takeaways</h3>
+											</header>
+											<p>
+												With the sensors being sealed in the cold soak chamber with the servo, 
+												sometimes they would start to read incorrectly at test temperatures. 
+												A lot of time was spent debugging errors in readouts - 
+												sensors would show cold damage, larger voltage drops from the servo needed a workaround, 
+												or maybe a solder contact would break over many test cycles.
+											</p>
+											<p>
+												Thorough testing helped narrow down solutions to keep servo motors operational for launch. 
+												Ultimately, power requirements to heat the system during idle time were looked into, 
+												and the test scale was extended to a full system cold soak in a temperature controlled room.
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Next Project -->
+							<section id="next project">
+								<div class="inner">
+									<ul class="actions">
+										<li><a href="launchers.html" class="button next">Next Project: Pneumatic Launchers</a></li>
+									</ul>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Last updated March 2025</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
